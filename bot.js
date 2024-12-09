@@ -2,7 +2,7 @@ require("dotenv").config();
 const { TOKEN, CHANNEL_ID_CF, GUILD_ID } = process.env;
 const { Client, GatewayIntentBits } = require("discord.js");
 const { joinVoiceChannel, createAudioPlayer, createAudioResource } = require('@discordjs/voice');
-
+const ytdl = require('@distube/ytdl-core')
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
